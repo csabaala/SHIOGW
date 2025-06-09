@@ -1,0 +1,535 @@
+# SHIOGW with GWHMI and SHIO88E extension modules
+
+esphome:
+  name: shiogw-i2c
+  name_add_mac_suffix: false
+  on_boot:
+    - priority: 600
+      then:
+        - display.page.show: info
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+  reboot_timeout: 0s
+
+ota:
+  platform: esphome
+  password: ""
+
+ethernet:
+  id: eth
+  type: LAN8720
+  mdc_pin: GPIO23
+  mdio_pin: GPIO18
+  clk_mode: GPIO17_OUT
+  phy_addr: 0
+
+globals:
+   - id: last_press
+     type: 'unsigned long'
+     restore_value: no
+     initial_value: '0'
+   - id: menu_hide_delay
+     type: 'int'
+     restore_value: no
+     initial_value: '30'
+
+time:
+  - platform: sntp
+    on_time:
+      # Every minutes
+      - seconds: 0
+        minutes: /1
+        then:
+          - lambda: |-
+              int elapsed = (millis() - id(last_press)) / 1000;
+              if(elapsed > id(menu_hide_delay)){
+                id(my_menu).hide();
+                id(clear).show();
+              }
+
+web_server:
+  version: 3
+
+prometheus:
+
+i2c:
+  sda: 13
+  scl: 32
+  scan: true
+  frequency: 400kHz
+  id: i2c_bus
+
+mcp23017:
+  - id: 'mcp23017_hub'
+    address: 0x20
+
+switch:
+  - platform: gpio
+    name: "O1"
+    id: o1
+    pin: 12
+  - platform: gpio
+    name: "O2"
+    id: o2
+    pin: 33
+  - platform: gpio
+    id: ioext1_o1
+    name: "IOEXT1 O1"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 15
+      mode:
+        output: true
+      inverted: false
+  - platform: gpio
+    id: ioext1_o2
+    name: "IOEXT1 O2"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 14
+      mode:
+        output: true
+      inverted: false
+  - platform: gpio
+    id: ioext1_o3
+    name: "IOEXT1 O3"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 13
+      mode:
+        output: true
+      inverted: false
+  - platform: gpio
+    id: ioext1_o4
+    name: "IOEXT1 O4"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 12
+      mode:
+        output: true
+      inverted: false
+  - platform: gpio
+    id: ioext1_o5
+    name: "IOEXT1 O5"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 11
+      mode:
+        output: true
+      inverted: false
+  - platform: gpio
+    id: ioext1_o6
+    name: "IOEXT1 O6"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 10
+      mode:
+        output: true
+      inverted: false
+  - platform: gpio
+    id: ioext1_o7
+    name: "IOEXT1 O7"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 9
+      mode:
+        output: true
+      inverted: false
+  - platform: gpio
+    id: ioext1_o8
+    name: "IOEXT1 O8"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 7
+      mode:
+        output: true
+      inverted: false
+
+binary_sensor:
+  - platform: gpio
+    name: "I1"
+    pin:
+      number: 35
+      inverted: true
+      mode:
+        input: true
+    on_press:
+          - display_menu.up: my_menu
+          - lambda: |-
+              id(last_press) = millis();
+  - platform: gpio
+    name: "I2"
+    pin:
+      number: 39
+      inverted: true
+      mode:
+        input: true
+    on_press:
+      - display_menu.down: my_menu
+      - lambda: |-
+          id(last_press) = millis();
+  - platform: gpio
+    name: "BTN1"
+    pin:
+      number: 34
+      inverted: true
+      mode:
+        input: true
+    on_press:
+    - if:
+       condition:
+          display_menu.is_active: my_menu
+       then:
+          - display_menu.enter: my_menu
+       else:
+          - display_menu.show:  my_menu
+    - lambda: |-
+        id(last_press) = millis();
+#-------------------I2C IO extender-----------------
+  - platform: gpio
+    id: ioext1_i1
+    name: "IOEXT1 I1"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 0
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    on_press:
+      then:
+        - switch.turn_on: ioext1_o1
+    on_release:
+      then:
+        - switch.turn_off: ioext1_o1
+  - platform: gpio
+    id: ioext1_i2
+    name: "IOEXT1 I2"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 1
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    on_press:
+      then:
+        - switch.toggle: ioext1_o2
+  - platform: gpio
+    id: ioext1_i3
+    name: "IOEXT1 I3"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 2
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    on_click:
+    - min_length: 50ms
+      max_length: 350ms
+      then:
+        - switch.toggle: ioext1_o3
+    - min_length: 500ms
+      max_length: 1000ms
+      then:
+        - switch.toggle: ioext1_o4
+  - platform: gpio
+    id: ioext1_i4
+    name: "IOEXT1 I4"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 3
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+  - platform: gpio
+    id: ioext1_i5
+    name: "IOEXT1 I5"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 4
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+  - platform: gpio
+    id: ioext1_i6
+    name: "IOEXT1 I6"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 5
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+  - platform: gpio
+    id: ioext1_i7
+    name: "IOEXT1 I7"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 6
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+  - platform: gpio
+    id: ioext1_i8
+    name: "IOEXT1 I8"
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: 8
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+
+sensor:
+ - platform: dht
+   pin: 15
+   model: AM2302
+   temperature:
+     name: "Temp"
+     id: temp
+   humidity:
+     name: "Humidity"
+     id: hum
+   update_interval: 60s
+ - platform: dallas_temp
+   id: dallas1
+   name: "Dallas temp"
+   update_interval: 30s
+
+text_sensor:
+  - platform: ethernet_info
+    ip_address:
+      name: ESP IP Address
+      id: esp_ip
+    dns_address:
+      name: ESP DNS Address
+      id: esp_dns
+    mac_address:
+      name: ESP MAC Address
+      id: esp_mac
+  - platform: version
+    id: esphome_ver
+    name: "ESPHome Version"
+    hide_timestamp: true
+
+one_wire:
+  - platform: gpio
+    pin: 14
+
+uart:
+  baud_rate: 115200
+  tx_pin: 4
+  rx_pin: 36
+
+graph:
+  - id: temp_graph
+    duration: 1h
+    width: 128
+    height: 50
+    traces:
+      - sensor: dallas1
+        line_type: SOLID
+        line_thickness: 2
+
+font:
+  - file: "arial.ttf"
+    id: arial_11
+    size: 11
+  - file: "arial.ttf"
+    id: arial_13
+    size: 13
+  - file: "arial.ttf"
+    id: arial_14
+    size: 14
+  - file: "arial.ttf"
+    id: arial_16
+    size: 16
+  - file: "arial.ttf"
+    id: arial_18
+    size: 18
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 128x64"
+    address: 0x3C
+    update_interval: 1s
+    id: oled
+    pages:
+      - id: clear
+        lambda: |-
+          it.print(0, 0, id(arial_14), "");
+      - id: info
+        lambda: |-
+          int x_row_1 = 0, x_row_2 = 30;
+          int y_line = 0, y_step = 15;
+          it.print(x_row_1, y_line, id(arial_11), "ID:");
+          it.print(x_row_2, y_line, id(arial_11), App.get_name().c_str());
+          y_line += y_step;
+          it.print(x_row_1, y_line, id(arial_11), "IP:");
+          it.print(x_row_2, y_line, id(arial_11), id(esp_ip).state.c_str());
+          y_line += y_step;
+          it.print(x_row_1, y_line, id(arial_11), "MAC:");
+          it.print(x_row_2, y_line, id(arial_11), id(eth).get_eth_mac_address_pretty().c_str());
+          y_line += y_step;
+          it.print(x_row_1, y_line, id(arial_11), "VER:");
+          it.print(x_row_2, y_line, id(arial_11), id(esphome_ver).state.c_str());
+      - id: io_state_i2c
+        lambda: |-
+          int circles_r = 4;
+          int circles_y = 25;
+          int circles_start_x = 38;
+          int circles_spacing = 12;
+          int numbers_x = 35;
+          int numbers_y = 4;
+          int label_x = 0;
+
+          //Print OUTPUT state
+          int state[8];
+          state[0] = id(ioext1_o1).state;
+          state[1] = id(ioext1_o2).state;
+          state[2] = id(ioext1_o3).state;
+          state[3] = id(ioext1_o4).state;
+          state[4] = id(ioext1_o5).state;
+          state[5] = id(ioext1_o6).state;
+          state[6] = id(ioext1_o7).state;
+          state[7] = id(ioext1_o8).state;
+          it.print(label_x, numbers_y, id(arial_14), "OUT");
+          it.print(numbers_x, numbers_y, id(arial_14), "1 2 3 4 5 6 7 8");
+          int x = circles_start_x;
+          for(int i = 0; i < 8; i++){
+            if(state[i]){
+              it.filled_circle(x, circles_y, circles_r);
+            }
+            else{
+              it.circle(x, circles_y, circles_r);
+            }
+            x += circles_spacing;
+          }
+          //Spacing
+          numbers_y += 33;
+          circles_y += 33;
+          //Print INPUT state
+          state[0] = id(ioext1_i1).state;
+          state[1] = id(ioext1_i2).state;
+          state[2] = id(ioext1_i3).state;
+          state[3] = id(ioext1_i4).state;
+          state[4] = id(ioext1_i5).state;
+          state[5] = id(ioext1_i6).state;
+          state[6] = id(ioext1_i7).state;
+          state[7] = id(ioext1_i8).state;
+          it.print(label_x, numbers_y, id(arial_14), "IN");
+          it.print(numbers_x, numbers_y, id(arial_14), "1 2 3 4 5 6 7 8");
+          x = circles_start_x;
+          for(int i = 0; i < 8; i++){
+            if(state[i]){
+              it.filled_circle(x, circles_y, circles_r);
+            }
+            else{
+              it.circle(x, circles_y, circles_r);
+            }
+            x += circles_spacing;
+          }
+      - id: tmp1
+        lambda: |-
+          it.printf(0, 0, id(arial_11), "Temp: %.2f °C", id(temp).state);
+          it.graph(0, 14, id(temp_graph));
+
+graphical_display_menu:
+  id: my_menu
+  display: oled
+  font: arial_14
+  on_redraw:
+    then:
+      component.update: oled
+  active: false
+  mode: rotary
+  items:
+    - type: Menu
+      text: 'Control out ESP'
+      items:
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 1'
+          switch: o1
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 2'
+          switch: o2
+        - type: back
+          text: 'Back'
+    - type: Menu
+      text: 'Control out I2C'
+      items:
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 1'
+          switch: ioext1_o1
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 2'
+          switch: ioext1_o2
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 3'
+          switch: ioext1_o3
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 4'
+          switch: ioext1_o4
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 5'
+          switch: ioext1_o5
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 6'
+          switch: ioext1_o6
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 7'
+          switch: ioext1_o7
+        - type: switch
+          immediate_edit: true
+          text: 'OUT 8'
+          switch: ioext1_o8
+        - type: back
+          text: 'Back'
+    - type: command
+      text: 'IO state I2C'
+      on_value:
+        then:
+          - display_menu.hide: my_menu
+          - display.page.show: io_state_i2c
+    - type: command
+      text: 'Info'
+      on_value:
+        then:
+          - display_menu.hide: my_menu
+          - display.page.show: info
+    - type: command
+      text: 'Temp graph 1'
+      on_value:
+        then:
+          - display_menu.hide: my_menu
+          - display.page.show: tmp1
+    - type: command
+      text: 'Hide'
+      on_value:
+        then:
+          - display_menu.hide: my_menu
+          - display.page.show: clear

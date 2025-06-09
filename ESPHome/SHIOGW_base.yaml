@@ -1,0 +1,82 @@
+esphome:
+  name: shiogw-base
+  name_add_mac_suffix: false
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+logger:
+
+api:
+  password: ""
+  reboot_timeout: 0s
+
+ota:
+  platform: esphome
+  password: ""
+
+ethernet:
+  id: eth
+  type: LAN8720
+  mdc_pin: GPIO23
+  mdio_pin: GPIO18
+  clk_mode: GPIO17_OUT
+  phy_addr: 0
+
+web_server:
+  version: 3
+
+prometheus:
+
+switch:
+  - platform: gpio
+    name: "O1"
+    id: o1
+    pin: 12
+  - platform: gpio
+    name: "O2"
+    id: o2
+    pin: 33
+
+binary_sensor:
+  - platform: gpio
+    name: "I1"
+    pin:
+      number: 35
+      inverted: true
+      mode:
+        input: true
+  - platform: gpio
+    name: "I2"
+    pin:
+      number: 39
+      inverted: true
+      mode:
+        input: true
+
+sensor:
+ - platform: dht
+   pin: 15
+   model: AM2302
+   temperature:
+     name: "Temp"
+     id: temp
+   humidity:
+     name: "Humidity"
+     id: hum
+   update_interval: 60s
+ - platform: dallas_temp
+   id: dallas1
+   name: "Dallas temp"
+   update_interval: 30s
+
+one_wire:
+  - platform: gpio
+    pin: 14
+
+uart:
+  baud_rate: 115200
+  tx_pin: 4
+  rx_pin: 36

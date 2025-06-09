@@ -1,0 +1,164 @@
+(footprint "TestPoint_Pad_1.0x1.0mm_custom"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SMD rectangular pad as test Point, square 1.0mm side length")
+	(tags "test point SMD pad rectangle square")
+	(property "Reference" "TP2"
+		(at -2.3368 0.0508 0)
+		(layer "F.SilkS")
+		(uuid "f4b369ec-ae43-4527-9c2c-221271dd8477")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestPoint"
+		(at 0 1.55 0)
+		(layer "F.Fab")
+		(uuid "809eab4e-da3a-4177-bee7-1dfc40a51709")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "TestPoint_Pad_1.0x1.0mm_custom"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "34762444-e768-4c11-9c67-f0a4121d389a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3b94ce25-18fd-4390-aef3-057e6eab596e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "test point"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd937cf5-0738-4f24-a159-24d7369845a1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr exclude_from_pos_files)
+	(fp_line
+		(start -0.762 -0.762)
+		(end 0.7874 -0.762)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9370d2eb-7355-4bf7-9926-c492cd986597")
+	)
+	(fp_line
+		(start -0.762 0.762)
+		(end -0.762 -0.762)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e402a77d-8da7-4656-a6c2-14a6b52cd026")
+	)
+	(fp_line
+		(start 0.7874 -0.762)
+		(end 0.7874 0.762)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9bb52b4d-5e19-4aed-b5e5-22fd37ac1a01")
+	)
+	(fp_line
+		(start 0.7874 0.762)
+		(end -0.762 0.762)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2760e102-fcbc-4d3b-95b9-eb54920f9a24")
+	)
+	(fp_line
+		(start -1 -1)
+		(end -1 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c8c0335f-cf96-4fcf-87a2-e748d28d69b6")
+	)
+	(fp_line
+		(start -1 -1)
+		(end 1 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9540228a-853e-49bb-8036-f4f52aaf9ebe")
+	)
+	(fp_line
+		(start 1 1)
+		(end -1 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4c6c8392-f8a0-4700-a87c-029fb7174ce0")
+	)
+	(fp_line
+		(start 1 1)
+		(end 1 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d4dc0d0d-a94e-49ce-bf38-3dfcd40cef3a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.45 0)
+		(layer "F.Fab")
+		(uuid "8c760b5e-c46e-4440-be37-d521bf19250e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "fb9594a7-c852-4c78-b72a-e3a599b50ea0")
+	)
+)
