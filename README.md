@@ -2,7 +2,7 @@
 
 DIN rail mount extension board for [Olimex ESP32-GATEWAY](https://www.olimex.com/Products/IoT/ESP32/ESP32-GATEWAY/open-source-hardware).
 
-More [Pictures](/Pictures#assembled-boards) and [Video](/ESPHome) of the assembled board and extensions.
+More [Pictures](/Pictures#assembled-boards) and [Video](https://youtu.be/ds2y22MUNzQ) of the assembled board and extensions.
 
 Example [ESPHome configs](/ESPHome)
 
@@ -41,7 +41,7 @@ View [3D model](https://3dviewer.net/#model=https://dl.dropbox.com/scl/fi/7jz3k0
 I2C IO extension.
 
 * MCP23017 based
-* 8 open collector output
+* 8 open collector output (50 mA load per channel)
 * 8 opto isolated input
 * LEDs for output and input status
 * One more I2C connector to connect other device
