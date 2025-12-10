@@ -4865,7 +4865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10k, SMD 0805"
+		(property "Description" "2,2k, SMD 0805"
 			(at 80.01 88.9 0)
 			(effects
 				(font
@@ -4874,7 +4874,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "LCSC" "C17520"
 			(at 80.01 88.9 0)
 			(effects
 				(font
@@ -4883,7 +4883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Order link 1" "https://www.hestore.hu/prod_10040338.html"
+		(property "Order link 1" "https://www.hestore.hu/prod_10040677.html"
 			(at 80.01 88.9 0)
 			(effects
 				(font
@@ -5387,7 +5387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10k, SMD 0805"
+		(property "Description" "3k, SMD 0805"
 			(at 85.09 99.06 0)
 			(effects
 				(font
@@ -5396,7 +5396,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "LCSC" "C17661"
 			(at 85.09 99.06 0)
 			(effects
 				(font
@@ -5405,7 +5405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Order link 1" "https://www.hestore.hu/prod_10040338.html"
+		(property "Order link 1" "https://www.hestore.hu/prod_10027533.html"
 			(at 85.09 99.06 0)
 			(effects
 				(font

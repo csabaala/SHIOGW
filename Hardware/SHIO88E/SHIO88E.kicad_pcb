@@ -8078,12 +8078,12 @@
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "LED10"
-			(at 0 -1.65 0)
+			(at -3.596715 0.1268 0)
 			(layer "F.SilkS")
 			(uuid "2996ade0-ba7e-4609-b163-ae05b4c40825")
 			(effects
 				(font
-					(size 1 1)
+					(size 1 0.6)
 					(thickness 0.15)
 				)
 			)
@@ -14428,12 +14428,12 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R10"
-			(at 0 1.9326 0)
+			(at -3.059929 -0.0256 0)
 			(layer "F.SilkS")
 			(uuid "71c7932f-18f1-40da-95f7-9357dd30a714")
 			(effects
 				(font
-					(size 1 1)
+					(size 1 0.6)
 					(thickness 0.15)
 				)
 			)
@@ -20355,12 +20355,12 @@
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "LED9"
-			(at 0 -1.65 0)
+			(at -3.3364 0.0408 0)
 			(layer "F.SilkS")
 			(uuid "6bb0b861-98be-4a2f-9791-784a80f8f2ec")
 			(effects
 				(font
-					(size 1 1)
+					(size 1 0.6)
 					(thickness 0.15)
 				)
 			)
@@ -21116,12 +21116,12 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R9"
-			(at 0.0958 1.9072 0)
+			(at -2.799615 0.0408 0)
 			(layer "F.SilkS")
 			(uuid "4e1796ab-bf4b-48c7-bf53-a33ce8011166")
 			(effects
 				(font
-					(size 1 1)
+					(size 1 0.6)
 					(thickness 0.15)
 				)
 			)
@@ -37437,7 +37437,7 @@
 		(uuid "d273e9f7-c6a7-4976-89d3-1cacdf1f9e12")
 	)
 	(gr_text "GND"
-		(at 68.0466 116.0526 0)
+		(at 63.0174 116.0526 0)
 		(layer "B.SilkS")
 		(uuid "3d3f2afe-d834-4b7b-9be9-f8d192fc04cf")
 		(effects
@@ -37497,7 +37497,7 @@
 		)
 	)
 	(gr_text "12V"
-		(at 62.9666 116.0526 0)
+		(at 68.4276 116.0526 0)
 		(layer "B.SilkS")
 		(uuid "87df9508-d8d5-4d8d-b7cb-7fc544b9d895")
 		(effects
@@ -37689,7 +37689,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 68.0974 118.3894 0)
+		(at 63.0174 118.364 0)
 		(layer "F.SilkS")
 		(uuid "50fce1bf-df1c-400a-a423-90bf560ced12")
 		(effects
@@ -37809,7 +37809,7 @@
 		)
 	)
 	(gr_text "12V"
-		(at 63.0174 118.3894 0)
+		(at 68.4022 118.364 0)
 		(layer "F.SilkS")
 		(uuid "af46f427-de3c-42b2-a726-c6423c331f79")
 		(effects
@@ -38024,6 +38024,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "3.3V"
+		(at 59.1566 82.9564 0)
+		(layer "F.SilkS")
+		(uuid "d8613e93-3682-424f-b325-0b644f77f418")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "O1"
 		(at 75.184 46.101 0)
 		(layer "F.SilkS")
@@ -38031,6 +38043,18 @@
 		(effects
 			(font
 				(size 1.5 1.5)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "12V"
+		(at 59.2582 74.0156 0)
+		(layer "F.SilkS")
+		(uuid "db434ea7-40e5-469c-a7e8-40541aab0501")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 			(justify left bottom)
@@ -38060,7 +38084,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "SHIO88E\nv1.0"
+	(gr_text "SHIO88E\nv1.1"
 		(at 118.5418 86.6648 0)
 		(layer "F.SilkS")
 		(uuid "e34830f8-082f-46e6-92f1-bbd474e2de87")

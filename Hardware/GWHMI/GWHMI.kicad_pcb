@@ -332,9 +332,22 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10027966.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f77c0aa-f5f2-4c91-bd55-6fc1f251e431")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/2ffa2d28-bbbd-4660-9781-35964f65af84")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -3.23 -3.23)
@@ -646,10 +659,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10043215.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8406ef50-3ed3-4dcc-8fdf-9f67227853d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/58e3ca02-0bd2-4e55-a0d6-7d52c39f3cf4")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1 -0.96)
@@ -894,10 +920,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10040338.html"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d1bbd09-bdc1-4fe7-91ae-c80e80c25173")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a11619ee-f317-47cb-ba24-020f19aeb70c")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -1206,7 +1245,7 @@
 				)
 			)
 		)
-		(property "Description" "10k, SMD 0805"
+		(property "Description" "2,2k, SMD 0805"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1219,7 +1258,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "LCSC" "C17520"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1232,10 +1271,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10040677.html"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b515537-15ca-4e15-941f-983fa4072e90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9914f7cb-6806-49e6-aa7d-a614db5cae1d")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -1458,10 +1510,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10040338.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a95a41f0-37bb-44bd-8515-44efc4d0cc48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/41715779-1581-40e5-9224-d33812cfea16")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -1671,10 +1736,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10026161.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7748c19b-c13d-4c88-9057-63b357a848c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/b0ead7bd-1675-433c-80de-d7f4ba9e34ed")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.33 -1.33)
@@ -2085,9 +2163,22 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10027966.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10fffacb-5706-4fe3-9966-0ba35f44c6b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/0b9fbff5-c1b0-4adb-9719-e4cc14fd857d")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -3.23 -3.23)
@@ -2399,10 +2490,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10040338.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "503a854a-4668-4482-9634-6d44b3229974")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/14be4ad6-e130-488a-8d4f-54007f18d1e5")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -2638,10 +2742,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10036394.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cc1016d-178b-49b7-bd39-c54ba09f4cd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f551e866-6070-430f-9906-0e18da12b468")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1 -0.96)
@@ -2886,9 +3003,22 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10027966.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00f849b3-04d2-4a8d-acaa-6eb4c37d57f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/6a801cf1-6dd6-4b03-9813-404aa45a8585")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 3.23 -3.23)
@@ -3284,7 +3414,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1.3in 128x64 OLED, I2C, SH1106"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3453,9 +3583,22 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10035540.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24e7335e-b723-4ca0-b08a-06ac5a5c81b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/80774730-44d4-43ba-89c0-258c90dffdcf")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -18 -13.25)
@@ -3661,10 +3804,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10036394.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e622800-5e57-4a96-9c9e-55f4bd134f86")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/8529b7f2-19a1-4755-817a-72670dde893f")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1 -0.96)
@@ -3909,9 +4065,22 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10027966.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49d8a93b-6965-4ab0-8161-bbaf0b83ae6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/50605a59-ca40-49cc-9b11-b31a07695d8b")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -3.23 -3.23)
@@ -4197,7 +4366,7 @@
 				)
 			)
 		)
-		(property "Description" "10k, SMD 0805"
+		(property "Description" "3k, SMD 0805"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4210,7 +4379,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "LCSC" "C17661"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4223,10 +4392,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10027533.html"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a68ff15e-012b-4ae7-a43b-91ece320ef7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b941d39d-de98-47af-b1c7-b028264f36bb")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -4462,10 +4644,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10036384.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ff32fb3-2db1-44cc-a3b4-eea5ee2242bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/424d972a-9566-4324-adb8-511c258d3ccc")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1 -0.96)
@@ -4723,10 +4918,23 @@
 				)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10036384.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f78e1ec6-af69-413c-b8b7-816da6262b9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/2d50fac4-cb37-4321-b96f-ee732f62c5d3")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1 -0.96)
@@ -4963,10 +5171,24 @@
 				(justify mirror)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10026292.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a6f7d9d2-8c47-4a79-bf9f-19c6910a633f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/8e3874a8-146d-441a-8ec1-34b3df852831")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.33 -16.57)
@@ -5402,10 +5624,24 @@
 				(justify mirror)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10001122.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "668a0d2a-f18c-48ae-9c4a-d0c81fab2a6b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/32b07acc-673a-4d47-8345-a40548a38f88")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.261252 -0.735)
@@ -5635,10 +5871,24 @@
 				(justify mirror)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10001122.html"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "099fd7b4-8745-460b-b55b-04e0ba6407c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8edc8001-aff6-4366-8aef-8a3fa4294de3")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.261252 0.735)
@@ -5868,10 +6118,24 @@
 				(justify mirror)
 			)
 		)
+		(property "Order link 1" "https://www.hestore.hu/prod_10001122.html"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "705b4e91-5eba-47b5-bd32-97e5968a31b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/39cdf799-c3f8-486d-97fd-7b34532ed892")
 		(sheetname "Root")
-		(sheetfile "GW_HMI.kicad_sch")
+		(sheetfile "GWHMI.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.261252 0.735)
