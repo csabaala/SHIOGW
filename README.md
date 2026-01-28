@@ -59,7 +59,7 @@ Adapter PCB to mount [Heltec LoRa 32 V3](https://heltec.org/project/wifi-lora-32
 
 View [3D model](https://3dviewer.net/#https://github.com/csabaala/SHIOGW/blob/main/Hardware/LRMNT/LRMNT.wrl)
 
-<img src="Pictures/LRMNT.PNG" alt="drawing" width="380"/>
+<img src="Pictures/LRMNT.png" alt="drawing" width="380"/>
 
 ### [SHIOADS](/Hardware/SHIOADS)
 
@@ -70,4 +70,4 @@ Din rail mount breakout board for ADS1115 module.
 
 View [3D model](https://3dviewer.net/#https://github.com/csabaala/SHIOGW/blob/main/Hardware/SHIOADS/SHIOADS.wrl)
 
-<img src="Pictures/SHIOADS.PNG" alt="drawing" width="100"/>
+<img src="Pictures/SHIOADS.png" alt="drawing" width="100"/>

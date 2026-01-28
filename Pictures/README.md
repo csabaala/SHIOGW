@@ -28,5 +28,5 @@ Fits into home distribution boxes:
 
 ## LRMNT & SHIOADS
 
-<img src="LRMNT_SHIOADS.jpg.jpg" alt="drawing" width="700"/>
+<img src="LRMNT_SHIOADS.jpg" alt="drawing" width="700"/>
 

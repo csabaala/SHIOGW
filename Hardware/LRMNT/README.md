@@ -3,7 +3,7 @@
 To activate the additional digital input and output channels, connect the power source to the H5 header.
 You can connect to the SHIOGW H10 connector using a JST cable.
 
-<img src="Pictures/LRMNT_12V.jpg" alt="drawing" width="380"/>
+<img src="https://github.com/csabaala/SHIOGW/blob/main/Pictures/LRMNT_12V.jpg" alt="drawing" width="380"/>
 
 ## Using input channel as ADC
 You can soldering the input channels (I3 - I5) to use as ADC (Analog to Digital Converter) input.
