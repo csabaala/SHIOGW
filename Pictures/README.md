@@ -25,3 +25,8 @@ Fits into home distribution boxes:
 <img src="boards_front_kicad.jpg" alt="drawing" width="700"/>
 
 <img src="boards_back_kicad.jpg" alt="drawing" width="700"/>
+
+## LRMNT & SHIOADS
+
+<img src="LRMNT_SHIOADS.jpg.jpg" alt="drawing" width="700"/>
+

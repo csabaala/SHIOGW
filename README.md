@@ -17,7 +17,7 @@ Example [ESPHome configs](/ESPHome)
 * 4 pin JST connector for I2C extensions
 * 14 pin IDC connector for direct GPIO access
 
-View [3D model](https://3dviewer.net/#model=https://dl.dropbox.com/scl/fi/j76wkurbdsg0v3u86ytwz/SHIOGW.wrl?rlkey=584sbdglya1lp1ddyppx6lrxc&st=6v3kh4mh&dl=0)
+View [3D model](https://3dviewer.net/#model=https://github.com/csabaala/SHIOGW/blob/main/Hardware/SHIOGW/SHIOGW.wrl)
 
 <img src="Pictures/SHIOGW.png" alt="drawing" width="380"/>
 
@@ -32,7 +32,7 @@ Control interface for SHIOGW.
 * Connects to SHIOGW's 12 pin IDC connector with a small ribbon cable.
 * BTN1 (up) and BTN3 (down) shared with I1 and I2 on SHIOGW main board.
 
-View [3D model](https://3dviewer.net/#model=https://dl.dropbox.com/scl/fi/7jz3k061ucrvhpbndl225/GWHMI.wrl?rlkey=riumigwjpmmgojjbx1wv2xw0k&st=5j6r821t&dl=0)
+View [3D model](https://3dviewer.net/#model=https://github.com/csabaala/SHIOGW/blob/main/Hardware/GWHMI/GWHMI.wrl)
 
 <img src="Pictures/GWHMI.png" alt="drawing" width="380"/>
 
@@ -46,6 +46,28 @@ I2C IO extension.
 * LEDs for output and input status
 * One more I2C connector to connect other device
 
-View [3D model](https://3dviewer.net/#model=https://dl.dropbox.com/scl/fi/n3l0dhv9xatyv03qyenmx/SHIO88E.wrl?rlkey=zyxzxo8a2xjssh9ibl0cdi6ao&st=b69elw70&dl=0)
+View [3D model](https://3dviewer.net/#https://github.com/csabaala/SHIOGW/blob/main/Hardware/SHIO88E/SHIO88E.wrl)
 
 <img src="Pictures/SHIO88E.png" alt="drawing" width="380"/>
+
+### [LRMNT](/Hardware/LRMNT)
+
+Adapter PCB to mount [Heltec LoRa 32 V3](https://heltec.org/project/wifi-lora-32-v3/) module to SHIOGW board.
+
+* 2 extra open collector output (50 mA load per channel)
+* 4 extra opto isolated input
+
+View [3D model](https://3dviewer.net/#https://github.com/csabaala/SHIOGW/blob/main/Hardware/LRMNT/LRMNT.wrl)
+
+<img src="Pictures/LRMNT.PNG" alt="drawing" width="380"/>
+
+### [SHIOADS](/Hardware/SHIOADS)
+
+Din rail mount breakout board for ADS1115 module.
+
+* On board voltage divider resistors (R1 - R8)
+* Solder jumpers to set I2C address (JP1 - JP4)
+
+View [3D model](https://3dviewer.net/#https://github.com/csabaala/SHIOGW/blob/main/Hardware/SHIOADS/SHIOADS.wrl)
+
+<img src="Pictures/SHIOADS.PNG" alt="drawing" width="100"/>
